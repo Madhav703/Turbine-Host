@@ -108,7 +108,7 @@ class Turbine(commands.Bot):
         if message.author.id in bot.owner_ids:
             return commands.when_mentioned_or("$", "")(bot, message)
         else:
-            return commands.when_mentioned_or("?")(bot, message)
+            return commands.when_mentioned_or("$")(bot, message)
 
     
 bot = Turbine()
